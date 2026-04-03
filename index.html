@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Srikanth ❤ Keerthi | Wedding Invitation</title>
+  <meta name="description" content="You are cordially invited to celebrate the wedding of Srikanth Reddy & Keerthi Reddy. May 6, 2026.">
+  <link rel="icon" type="image/png" href="/images/oooo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-monogram">S & K</div>
+      <div class="preloader-text">Loading your invitation...</div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LANDING / CURTAIN REVEAL ===== -->
+  <div id="landing">
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+    <div class="gold-ribbon"></div>
+    <div class="landing-content">
+      <div class="invitation-card">
+        <div class="card-inner">
+          <p class="you-are-invited">You Are Invited</p>
+          <h1 class="couple-names-landing">
+            Srikanth <span class="amp">&amp;</span><br>Keerthi
+          </h1>
+          <button id="open-invitation-btn" class="open-btn">
+            OPEN<br>INVITATION
+          </button>
+        </div>
+      </div>
+      <p class="tap-text">Tap to begin the celebration</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content" class="hidden">
+
+    <!-- ── INVITATION SECTION ── -->
+    <section id="invitation" class="section dark-section">
+      <div class="section-inner">
+        <div class="logo-wrap">
+          <img src="/images/oooo.png" alt="SK" class="wedding-logo" id="main-logo">
+        </div>
+        <p class="families-label">Together with our FAMILIES</p>
+        <h2 class="couple-script">
+          <span>Srikanth</span>
+          <span class="script-amp">&amp;</span>
+          <span>Keerthi</span>
+        </h2>
+        <p class="invite-line">Invite you to join us in the celebration<br>of our love</p>
+        <div class="ornament-divider">
+          <span></span><span class="diamond">◆</span><span></span>
+        </div>
+        <p class="date-display">MAY 6, 2026</p>
+        <p class="venue-display">GM CONVENTION CENTER, NALGONDA</p>
+      </div>
+    </section>
+
+    <!-- ── COUNTDOWN ── -->
+    <section id="countdown" class="section dark-section">
+      <div class="section-inner">
+        <h2 class="section-heading">Counting Down To</h2>
+        <p class="section-subheading">Our Special Day</p>
+        <div class="countdown-grid">
+          <div class="cd-box">
+            <span class="cd-num" id="cd-days">00</span>
+            <span class="cd-label">Days</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-hours">00</span>
+            <span class="cd-label">Hours</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-minutes">00</span>
+            <span class="cd-label">Minutes</span>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-seconds">00</span>
+            <span class="cd-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EVENTS TIMELINE ── -->
+    <section id="events" class="section dark-section events-dark">
+      <div class="section-inner events-inner">
+        <h2 class="events-title">Wedding Events</h2>
+        <p class="events-subtitle">A celebration of love and tradition</p>
+
+        <div class="ev-timeline">
+          <div class="ev-timeline-line"></div>
+
+          <!-- Engagement -->
+          <div class="ev-block reveal" data-delay="0">
+            <div class="ev-dot-wrap"><div class="ev-dot-ring"></div></div>
+            <div class="ev-info">
+              <h3 class="ev-name">The Engagement</h3>
+              <p class="ev-date-new">April 13, 2026</p>
+              <p class="ev-venue-new">Chaitanya Function Hall, Haliya</p>
+              <p class="ev-tag">RING CEREMONY</p>
+              <div class="ev-quote-card">
+                <span class="ev-emoji">💍</span>
+                <p class="ev-quote">"The beginning of forever."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Haldi & Mehendi -->
+          <div class="ev-block reveal" data-delay="150">
+            <div class="ev-dot-wrap"><div class="ev-dot-ring"></div></div>
+            <div class="ev-info">
+              <h3 class="ev-name">Haldi &amp; Mehendi</h3>
+              <p class="ev-date-new">May 5, 2026</p>
+              <p class="ev-venue-new">Residence</p>
+              <p class="ev-tag">HENNA &amp; TRADITIONS</p>
+              <div class="ev-quote-card">
+                <span class="ev-emoji">🌿</span>
+                <p class="ev-quote">"Colors of love and blessings."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wedding -->
+          <div class="ev-block reveal" data-delay="300">
+            <div class="ev-dot-wrap"><div class="ev-dot-ring"></div></div>
+            <div class="ev-info">
+              <h3 class="ev-name">Wedding Ceremony</h3>
+              <p class="ev-date-new">May 6, 2026</p>
+              <p class="ev-venue-new">GM Convention Center, Nalgonda</p>
+              <p class="ev-tag">SACRED UNION</p>
+              <div class="ev-quote-card">
+                <span class="ev-emoji">🪷</span>
+                <p class="ev-quote">"Two souls, one journey."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reception -->
+          <div class="ev-block reveal" data-delay="450">
+            <div class="ev-dot-wrap"><div class="ev-dot-ring"></div></div>
+            <div class="ev-info">
+              <h3 class="ev-name">The Reception</h3>
+              <p class="ev-date-new">May 7, 2026</p>
+              <p class="ev-venue-new">S Function Hall, Peddaadisarlapalli</p>
+              <p class="ev-tag">CELEBRATION</p>
+              <div class="ev-quote-card">
+                <span class="ev-emoji">🎉</span>
+                <p class="ev-quote">"Let the celebration begin!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OUR STORY ── -->
+    <section id="story" class="section light-section">
+      <div class="section-inner">
+        <h2 class="section-heading dark-text">Our Story</h2>
+        <div class="gold-bar"></div>
+
+        <!-- Groom -->
+        <div class="story-card reveal">
+          <div class="photo-ring">
+            <div class="photo-ring-border"></div>
+            <img src="/images/srik.jpeg" alt="Srikanth Reddy" class="story-photo" id="groom-photo">
+            <div class="photo-placeholder">S</div>
+          </div>
+          <h3 class="story-name">Srikanth</h3>
+          <p class="story-quote" id="groom-quote">"The moment I saw her, I knew my search was over."</p>
+          <div class="heart-float">❤</div>
+        </div>
+
+        <!-- Bride -->
+        <div class="story-card reveal">
+          <div class="photo-ring">
+            <div class="photo-ring-border"></div>
+            <img src="/images/k.jpeg" alt="Keerthi Reddy" class="story-photo" id="bride-photo">
+            <div class="photo-placeholder">K</div>
+          </div>
+          <h3 class="story-name">Keerthi</h3>
+          <p class="story-quote" id="bride-quote">"In him, I found my love, my best friend, and my home."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LOVE PARAGRAPH ── -->
+    <section id="love-note" class="section light-section love-section">
+      <div class="section-inner">
+        <div class="love-paragraph reveal">
+          <p>Love is not just about finding the right person, but creating the right relationship. It's not about how much love you have in the beginning but how much love you build until the end. We are starting our forever, and we want you to be part of it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VENUE MAP ── -->
+    <section id="venue" class="section light-section venue-section">
+      <div class="section-inner">
+        <h2 class="section-heading dark-text">The Royal Venue</h2>
+        <div class="gold-bar"></div>
+        <div class="venue-map-card reveal">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.4!2d79.2677!3d16.7777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb7a5e1b0e0b0d%3A0x0!2sGM+Convention+Centre+Nalgonda!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%"
+              height="260"
+              style="border:0; border-radius: 12px 12px 0 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="venue-map-info">
+            <p class="venue-map-name">GM Convention Centre, Nalgonda</p>
+            <a
+              href="https://www.google.com/maps/search/GM+Convention+Centre+Nalgonda"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="get-directions-btn"
+            >
+              📍 GET DIRECTIONS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RSVP ── -->
+    <section id="rsvp" class="section dark-section">
+      <div class="section-inner">
+        <h2 class="section-heading">RSVP</h2>
+        <div class="gold-bar center"></div>
+        <p class="rsvp-subtitle">We would be honored by your presence</p>
+
+        <form id="rsvp-form" class="rsvp-form">
+          <div class="field">
+            <input type="text" id="f-name" name="name" required placeholder=" ">
+            <label for="f-name">Your Full Name</label>
+            <span class="focus-line"></span>
+          </div>
+          <div class="field">
+            <input type="tel" id="f-phone" name="phone" required placeholder=" ">
+            <label for="f-phone">Phone Number</label>
+            <span class="focus-line"></span>
+          </div>
+          <div class="field">
+            <input type="email" id="f-email" name="email" placeholder=" ">
+            <label for="f-email">Email (Optional)</label>
+            <span class="focus-line"></span>
+          </div>
+          <div class="field select-field">
+            <select id="f-guests" name="guests" required>
+              <option value="" disabled selected>Number of Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests</option>
+            </select>
+          </div>
+          <div class="field select-field">
+            <select id="f-event" name="attending" required>
+              <option value="" disabled selected>Which Events?</option>
+              <option value="all">All Events</option>
+              <option value="engagement">Engagement Only</option>
+              <option value="wedding">Wedding Only</option>
+              <option value="reception">Reception Only</option>
+              <option value="wedding-reception">Wedding &amp; Reception</option>
+            </select>
+          </div>
+          <div class="field">
+            <textarea id="f-wishes" name="wishes" rows="3" placeholder=" "></textarea>
+            <label for="f-wishes">Wishes for the Couple</label>
+            <span class="focus-line"></span>
+          </div>
+          <button type="submit" id="rsvp-submit" class="submit-btn">
+            <span class="btn-label">Send Your Wishes 💌</span>
+            <span class="btn-loader hidden">Sending…</span>
+          </button>
+        </form>
+
+        <div id="rsvp-success" class="success-msg hidden">
+          <div class="success-icon">💝</div>
+          <h3>Thank You!</h3>
+          <p>Your response has been recorded.<br>We look forward to celebrating with you!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer id="footer" class="section dark-section footer">
+      <div class="section-inner">
+        <div class="footer-logo-wrap">
+          <img src="/images/oooo.png" alt="SK" class="footer-logo" id="footer-logo">
+        </div>
+        <p class="footer-names">Srikanth &amp; Keerthi</p>
+        <p class="footer-tag">#SrikanthWedsKeerthi</p>
+        <p class="footer-date-line">May 6, 2026</p>
+        <div class="footer-hearts">
+          <span>❤</span><span>❤</span><span>❤</span>
+        </div>
+        <p class="footer-credit">Made with love</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===== FLOATING PETALS ===== -->
+  <div id="petals-container" aria-hidden="true"></div>
+
+  <!-- ===== MUSIC TOGGLE ===== -->
+  <button id="music-btn" class="music-toggle" aria-label="Toggle music">
+    <span class="music-icon">🎵</span>
+  </button>
+  <audio id="bg-music" loop preload="none">
+    <!-- Add your music: <source src="/music/song.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
