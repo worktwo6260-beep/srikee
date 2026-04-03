@@ -43,6 +43,11 @@ function initCurtainReveal() {
     // Add curtain opening class
     landing.classList.add('curtains-open');
 
+    // Auto-play music when invitation opens
+    if (bgMusic.paused) {
+      musicBtn.click();
+    }
+
     // After curtain animation, show main content
     setTimeout(() => {
       landing.classList.add('gone');
@@ -204,17 +209,13 @@ function initRSVP() {
 
     // Collect form data
     const formData = {
-      name: $('#f-name').value.trim(),
-      phone: $('#f-phone').value.trim(),
-      email: $('#f-email').value.trim(),
-      guests: $('#f-guests').value,
-      attending: $('#f-event').value,
-      wishes: $('#f-wishes').value.trim(),
+      name: $('#f-name') ? $('#f-name').value.trim() : '',
+      wishes: $('#f-wishes') ? $('#f-wishes').value.trim() : '',
       timestamp: new Date().toISOString(),
     };
 
     // Validate
-    if (!formData.name || !formData.phone || !formData.guests || !formData.attending) {
+    if (!formData.name) {
       shakeElement(submitBtn);
       return;
     }
@@ -225,13 +226,24 @@ function initRSVP() {
     btnLoader.classList.remove('hidden');
 
     try {
-      // Save to localStorage
-      const responses = JSON.parse(localStorage.getItem('wedding_rsvp') || '[]');
-      responses.push(formData);
-      localStorage.setItem('wedding_rsvp', JSON.stringify(responses));
+      // Send data to the provided email using FormSubmit
+      const response = await fetch("https://formsubmit.co/ajax/vangalasrikanth1566@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Wishes: formData.wishes,
+          _subject: "New Wedding Wish from " + formData.name,
+          _template: "table" // Formats the email nicely
+        })
+      });
 
-      // Simulate network delay for smooth UX
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
 
       // Show success
       rsvpForm.classList.add('hidden');
